@@ -17,7 +17,7 @@ spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialec
 spring.database.driverClassName: "org.postgresql.Driver"
 
 spring.datasource.url: "jdbc:postgresql://database:5432/spmia_local"
-spring.datasource.username: "postgres"
+spring.datasource.username: "postgres1"
 spring.datasource.password: "{cipher}9bea7789e177ab357c3f73ccaad79c07962a20397820b76e0efafab9f7c95aa7"
 
 spring.datasource.platform:  "postgres"
