@@ -1,0 +1,25 @@
+example.organization.property: "I AM THE DEFAULT ORGANIZATION SERVICE"
+
+
+## JPA
+spring.jpa.generate-ddl: "true"
+spring.jpa.hibernate.ddl-auto: "update"
+#spring.jpa.show-sql: "true"
+
+## H2
+#spring.h2.console.enabled: "true"
+
+
+spring.jpa.database: "POSTGRESQL"
+spring.jpa.show-sql: "true"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQL10Dialect"
+
+spring.database.driverClassName: "org.postgresql.Driver"
+
+spring.datasource.url: "jdbc:postgresql://database:5432/spmia_local"
+spring.datasource.username: "postgres1"
+spring.datasource.password: "{cipher}f99d11a47a82aab88b5360909186b0c1e15bb12e76a95ce5d6131aacd5eb911b"
+
+spring.datasource.platform:  "postgres"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"

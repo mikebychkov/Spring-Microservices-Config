@@ -1,28 +1,30 @@
-example.property: "I AM THE DEFAULT (GIT REPO CONFIG)"
+example.property: "I AM A DEV PROPERTY OVERRIDE"
 
 
 ## JPA
 spring.jpa.generate-ddl: "true"
 spring.jpa.hibernate.ddl-auto: "update"
-#spring.jpa.show-sql: "true"
+spring.jpa.show-sql: "true"
 
 ## H2
-#spring.h2.console.enabled: "true"
+spring.h2.console.enabled: "true"
 
 
-spring.jpa.database: "POSTGRESQL"
-spring.jpa.show-sql: "true"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQL10Dialect"
+## POSTGRESQL
 
-spring.database.driverClassName: "org.postgresql.Driver"
+#spring.jpa.database: "POSTGRESQL"
+#spring.jpa.show-sql: "false"
+#spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
-spring.datasource.url: "jdbc:postgresql://database:5432/spmia_local"
-spring.datasource.username: "postgres1"
-spring.datasource.password: "{cipher}f99d11a47a82aab88b5360909186b0c1e15bb12e76a95ce5d6131aacd5eb911b"
+#spring.database.driverClassName: "org.postgresql.Driver"
 
-spring.datasource.platform:  "postgres"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
+#spring.datasource.url: "jdbc:postgresql://database:5432/spmia_dev"
+#spring.datasource.username: "postgres"
+#spring.datasource.password: "{cipher}9bea7789e177ab357c3f73ccaad79c07962a20397820b76e0efafab9f7c95aa7"
+
+#spring.datasource.platform:  "postgres"
+#spring.datasource.testWhileIdle: "true"
+#spring.datasource.validationQuery: "SELECT 1"
 
 
 #redis.server: "redis"
