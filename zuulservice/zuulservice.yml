@@ -4,3 +4,4 @@ zuul:
   routes:
     licensingservice: /licensing/**
     organizationservice: /organization/**
+    authenticationservice: /authentication/**
