@@ -4,12 +4,9 @@ example.property: "I AM THE DEFAULT (GIT REPO CONFIG)"
 ## JPA
 spring.jpa.generate-ddl: "true"
 spring.jpa.hibernate.ddl-auto: "update"
-#spring.jpa.show-sql: "true"
-
-## H2
-#spring.h2.console.enabled: "true"
 
 
+## POSTGRESQL
 spring.jpa.database: "POSTGRESQL"
 spring.jpa.show-sql: "true"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQL10Dialect"
@@ -25,6 +22,11 @@ spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 
 
-#redis.server: "redis"
-#redis.port: "6379"
-#signing.key: "345345fsdfsf5345"
+## SECURITY
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://authenticationservice:8901/auth/user/
+    client:
+      grant-type: client_credentials
+

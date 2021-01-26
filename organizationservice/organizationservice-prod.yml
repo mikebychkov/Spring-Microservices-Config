@@ -4,12 +4,9 @@ example.organization.property: "I AM THE DEFAULT ORGANIZATION SERVICE"
 ## JPA
 spring.jpa.generate-ddl: "true"
 spring.jpa.hibernate.ddl-auto: "update"
-#spring.jpa.show-sql: "true"
-
-## H2
-#spring.h2.console.enabled: "true"
 
 
+## POSTGRESQL
 spring.jpa.database: "POSTGRESQL"
 spring.jpa.show-sql: "true"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQL10Dialect"
@@ -23,3 +20,12 @@ spring.datasource.password: "{cipher}f99d11a47a82aab88b5360909186b0c1e15bb12e76a
 spring.datasource.platform:  "postgres"
 spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
+
+
+## SECURITY
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://authenticationservice:8901/auth/user/
+    client:
+      grant-type: client_credentials
