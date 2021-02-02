@@ -29,3 +29,8 @@ security:
       user-info-uri: http://authenticationservice:8901/auth/user/
     client:
       grant-type: client_credentials
+      
+## ZIPKIN
+spring:
+  zipkin:
+    base-url: "http://zipkin:9411"
