@@ -30,9 +30,11 @@ security:
     client:
       grant-type: client_credentials
 
-## REDIS
+## REDIS, ZIPKIN
 spring:
   redis:
     port: 6379
     host: redis
+  zipkin:
+    base-url: "http://zipkin:9411"
 
